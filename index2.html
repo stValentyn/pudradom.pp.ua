@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+	<img id="fon" src="1.jpg" alt="the fon" width="200px">
+
+<button id="btn_modal_window">Open Modal</button>
+<div id="my_modal" class="modal">
+	<div class="modal_content">
+    	<p class="modal_header">HELLO FROM MODAL WINDOW!</p>
+    	<button class="close_modal_window">Close</button>
+   	</div>
+</div>
+
+<script>
+	let modal = document.getElementById("my_modal");
+	let btn_op = document.getElementById("btn_modal_window");
+	let btn_cl = document.getElementsByClassName("close_modal_window")[0];
+
+	btn_op.onclick = function ()
+	{
+	   modal.style.display = "block";
+	}
+
+	btn_cl.onclick = function () 
+	{
+	   modal.style.display = "none";
+	}
+</script>
+
+</body>
+</html>
